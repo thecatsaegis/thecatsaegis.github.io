@@ -1,1 +1,1 @@
-The Cat's Aegis shares Programming concepts learned through academic work.
+The Cat's Aegis shares Programming Concepts learned through academic work.
