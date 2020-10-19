@@ -1,0 +1,56 @@
+/************************************************************************************************************************
+
+   Programmer: Robert Aguilar
+   
+   Date:       10/12/20
+   
+   Filename:   cs80.css
+
+************************************************************************************************************************/
+
+body
+{
+   background-color: #0000ff;
+   color: #ffff00;
+}
+.h1_top
+{
+   text-align: center;
+}
+.nav_top
+{
+   text-align: center;
+}
+a:link
+{
+   color: #afeeee;
+}
+a:visited
+{
+   color: #00ffff;
+}
+a:hover
+{
+   color: #e0ffff;
+}
+.space
+{
+   letter-spacing: 0.5em;
+   margin: 0.9em;
+   cursor: pointer;
+   text-decoration: underline;
+}
+.dark-mode
+{
+   background-color: #333333;
+   color: #40e0d0;
+}
+.large
+{
+   text-align: center;
+   font-size: 10em;
+}
+footer
+{
+   text-align: center;
+}
