@@ -1,0 +1,26 @@
+    code
+    {
+      background-color: #eee;
+      border-radius: 3px;
+      padding: 0 3px;
+    }
+    .silver_0
+    {
+      background-color: #d8d8d8;
+    }
+    .silver_1
+    {
+      background-color: #c0c0c0;
+    }
+    .anchor
+    {
+      text-align: center;
+    }
+    div
+    {
+      background-color: #eee;
+      border: 1px solid;
+      vertical-align: left;
+      top: center; 
+    }
+
