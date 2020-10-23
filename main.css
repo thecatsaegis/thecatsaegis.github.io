@@ -54,3 +54,7 @@ footer
 {
    text-align: center;
 }
+figure
+{
+   display: inline-block;
+}
