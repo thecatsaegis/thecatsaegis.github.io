@@ -57,4 +57,9 @@ footer
 figure
 {
    display: inline-block;
+   padding-left: 27%;
+}
+img
+{
+   border-radius: 5%;
 }
