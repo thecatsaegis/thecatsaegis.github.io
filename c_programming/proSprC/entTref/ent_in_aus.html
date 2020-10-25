@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--
+
+   Programmer: Robert Aguilar
+   Date:       10/25/20
+   Filename:   index.html
+
+-->
+
+<html lang="de">
+   <head>
+     <title>Entscheidungen in Ausdrücken</title>
+     <meta charset="utf-8">
+       <meta charset="utf-8">
+     <link rel="stylesheet" href="proSprC.css">
+     <link rel="icon" type="image/x-icon" href="favicon_hex4.ico">
+   </head>
+
+   <body>
+     <br>
+     <p><h1 align="center">4.1 - Entscheidungen in Ausdrücken</h1></p>
+     <br>
+     <br>
+     <p align="center">
+       <a href=".html"></a>&nbsp;&nbsp;&nbsp;
+       <a href=""></a>&nbsp;&nbsp;&nbsp;
+       <a href=""></a>&nbsp;&nbsp;&nbsp;
+       <a href=""></a>&nbsp;&nbsp;&nbsp;
+       <a href=""></a>&nbsp;&nbsp;&nbsp;
+       <a href=""></a>
+     </p>
+     <br>
+     <br>
+     <p><h2 align="center">Entscheidungen in Ausdrücken</h2></p>
+     <ul>
+       <li>Häufig müssen Programme Entscheidungen treffen.</li>
+       <li>Egal, ob dabei eine Berechnung auszuwählen oder ein Anweisungsblock auszführen ist, immer werden sie nach dem
+       Schema <em>wenn ..., dann ...</em> gefällt.</li>
+       <li>Für alternative Berechnungen und Zuweisungen stellt C einen speziellen Operator zur Verfügung, der im folgenden
+       Programm verwendet wird, um zu entscheiden, welche von zwei Zahlen die groessere ist.</li>
+     </ul>
+     <br>
+     <br>
+     <div><pre><code>
+     /* zahlenvergleich.c */
+     #include &lt;stdio.h&gt;
+     
+     int main(void)
+     {
+       int x,y;
+       printf("\nZ a h l e n v e r g l e i c h\n");
+       printf("\nBitte x eingeben : ");
+       scanf("%i",&x);
+       printf("Bitte y eingeben: ");
+       scanf("%i",&y);
+       printf("\nDie groessere Zahl lautet  %i",
+             (x>y) ? x : y);
+     }
+     </code></pre></div>
+     <br>
+     <br>
+     <br>
+   <a href="index.html">Home</a>
+   </body>
+
+</html>
