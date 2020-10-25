@@ -3,12 +3,12 @@
 <!--
 
    Programmer: Robert Aguilar
-   Date:       10/22/20
+   Date:       10/25/20
    Filename:   index.html
 
 -->
 
-<html lang="en">
+<html lang="de">
 <head>
   <title>Entscheidungen treffen</title>
   <meta charset="utf-8">
@@ -19,93 +19,28 @@
 
 <body>
   <br>
-  <p><h1 align="center">Entscheidungen treffen</h1></p>
+  <p><h1 align="center">4 - Entscheidungen treffen</h1></p>
   <br>
   <br>
   <p align="center">
-    <a href="ent_in_aus.html">Entscheidungen in Ausdrücken</a>&nbsp;&nbsp;&nbsp;
+    <a href="ent_in_aus.html">4.1 - Entscheidungen in Ausdrücken</a>&nbsp;&nbsp;&nbsp;
     <a href="">Noch im Bau</a>&nbsp;&nbsp;&nbsp;
     <a href="">Noch im Bau</a>&nbsp;&nbsp;&nbsp;
     <a href="">Noch im Bau</a>&nbsp;&nbsp;&nbsp;
     <a href="">Noch im Bau</a>&nbsp;&nbsp;&nbsp;
-    <a href="#uebungen">Übungen - Noch im Bau</a>
+    <a href="uebungen">Übungen - Noch im Bau</a>
   </p>
   <br>
   <br>
-  <p><h2 id="ganzen_zahlen", align="center">Mit ganzen Zahlen rechnen</h2></p>
+  <p><h2 align="center">Entscheidungen treffen</h2></p>
   <ul>
-    <li>Im vorherigen Abschnitt haben Sie die Grammatik (Syntax) eines C-Programms kennengelernt und mit Hilfe der Funktion <i>printf</i> erste Berechnungen durchgeführt.</li>
-    <li>Die Beispielprogramme hatten allerdings den Nachteil, daß für jeden neuen Zahlenwert das Programm neu übersetzt werden mußte.</li>
-    <li>Es wäre viel praktischer, wenn das Programm beliebige Zahlen während des Programmlaufs von der Tastatur entgegennehmen und mit diesen Werten die Berechnungen durchführen könnte.</li>
-    <li>Erst diese Flexibilität macht ein Programm zu einem sinnvollen Programm.</li>
+    <li>In den ersten drei Kapiteln haben Sie Programme nit einer sequentiellen Struktur geschrieben.</li>
+    <li>Die Befehle wurden hierbei von oben nach unten der Reihe nach abgearbeitet.</li>
+    <li>In diesem Kapitel werden Sie eine wichtige Programmstruktur kennelernen: die bedingten Answeisungen.</li>
+    <li>Mit Hilfe solcher Entscheidungen kann bestimmt werden, welcher Programmteil zu durchlaufen ist.</li>
   </ul>
   <br>
-  <br>
-  <ul>
-    <li>Die C-Bibliothek stellt eine Vielzahl von Funktionen zur Dateneingabe bereit.</li>
-    <li>Für die folgenden Beispiele wird die Funktion <i>scanf</i> benutzt.</li>
-    <li>Man kann diese Funktion als Gegenstück zu <i>printf</i> betrachten, da auch hier ein Formatstring mit Platzhaltern, gefolgt von einer Variablenliste, verwendet wird.</li>
-  </ul>
-  <br>
-  <br>
-  <p>Geben Sie das Programm <i>prozentzeichen.c</i> ein, und probieren Sie es aus.</p>
-  <p>Auch hier gilt natürlich, daß die Zahlen der Nummernliste nicht mit eingegeben werden müssen.</p>
-  <br>
-  <br>
-  <div><pre><code>
-  /* prozentzeichen.c */
-  #include &lt;stdio.h&gt;
-  
-  main()
-  {
-    int x,y;
-    printf("\n\t1 .  R e c h e n p r o g r a m m\n");
-    printf("\nBitte x eingeben :");
-    scanf("%i",&x);
-    printf("Bitte y eingeben: ");
-    scanf("%i",&y);
-    printf("\n %i + %i ist %i",x,y,x+y);
-    printf("\n %i - %i ist %i",x,y,x-y);
-    printf("\n %i * %i ist %i",x,y,x*y);
-    printf("\n %i / %i ist %i",x,y,x/y);
-    printf("\n %i %% %i ist %i\n\n",x,y,x%y);
-  }
-  </code></pre></div>
-  <br>
-  <br>
-  <p>Geben Sie als Werte für <i>x</i> 12 und für <i>y</i> 3 ein.</p>
-  <p>Das Ergebnis sieht dann so aus:</p>
-  <br>
-  <pre>
-          1 .  R e c h e n p r o g r a m m
-  
-  Bitte x eingeben :12
-  Bitte y eingeben :3
-
-   12 + 3 ist 15
-   12 - 3 ist 9
-   12 * 3 ist 36
-   12 / 3 ist 4
-   12 % 3 ist 0
-  </pre>
-  <br>
-  <p>Neben der Funktion <i>scanf</i> sind noch weitere neue Elemente in diesem Programm aufgetaucht.</p>
-  <br>
-  <ul>
-    <p><pre><code>#include &lt;stdio.h&gt;</code></pre></p>
-    <li>Eine oder mehrere <i>#include</i>-Anweisungen finden sich in fast jedem C-Programm wieder.</li>
-    <li><i>#include</i> ist keine Porgrammansweisung, sondern eine sogenannte <a href="dateien_einfügen.html">Präprozessor-Direktive</a>.</li>
-    <li>Hinter diesem furchteinflößenden Wort verbirgt sich allerdings nichts Geheimnisvolles.</li>
-    <li>Bevor der eigentliche Kompiliervorgang beginnt, sucht der sogenannate Präprozessor nach dem Nummernzeichen (#).</li>
-    <li>Findet er dieses Zeichen, so weiß er, daß jetzt eine Anweisung für ihn folgt.</li>
-    <li>Das Wort <i>include</i> bedeutet nun, dass er die Datei, die danach in spitzen Klammern angegeben ist, an dieser Stelle in Ihr Programm einfügen soll.</li>
-    <li>Dieser Vograng lässt sich mit dem automatischen Einfügen von Textbausteinen bei einer Textverarbeitung vergleichen.</li>
-    <li>Im Beispiel soll die Datei <i>stdio.h</i> in den Programmtext einfgefügt werden.</li>
-    <li>Die <i>include</i>-Dateien, die an der Endung <i>h</i> zu erkennen sind, haben u.a. die Aufgabe, so genannte Prototypen in Ihr Programm einzubauen.</li>
-    <li>Das sind Definitionen, die vom Compiler benötigt werden, damit er die korrekte Verwendung der Bibliotheksfunktionen kontrollieren kann.</li>
-    <li>In ihrer Dokumentation ist zu jeder einzelnen Funktion angegeben, welche <i>include</i>-Datei von ihr benötigt wird.</li>
-  </ul>
-  <br>
+  <a href="../index.html">Home</a>
 
 </body>
 
